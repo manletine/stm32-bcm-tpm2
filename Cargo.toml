@@ -1,0 +1,20 @@
+[package]
+name = "stm32-bcm-tpm2"
+version = "1.0.0"
+authors = ["Tauras Treikauskas <tausilver1000@gmail.com>"]
+edition = "2018"
+license-file = "LICENSE.md"
+description = "STM32 BCM TPM2 light controller software"
+repository = "https://github.com/manletine/stm32-bcm-tpm2"
+readme = "README.md"
+
+[dependencies]
+cortex-m = "0.7.3"
+cortex-m-rt = "0.6.15"
+nb = "1.0.0"
+panic-semihosting = "0.6.0"
+embedded-hal = "0.2.5"
+
+[dependencies.stm32f1xx-hal]
+version = "0.7.0"
+features = ["rt", "stm32f103", "medium"]
